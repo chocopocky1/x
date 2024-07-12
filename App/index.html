@@ -1,0 +1,38 @@
+<!-- MAIN PAGE -->
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author">
+    <!-- IMPORTANT: Disables zoom scroling for mobile optimization -->
+    <meta name="viewport" 
+    content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>Focus Forge</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+          }
+        }
+      </script>
+      <script src=" https://cdn.jsdelivr.net/npm/lil-gui@0.19.2/dist/lil-gui.umd.min.js "></script>
+      <link href=" https://cdn.jsdelivr.net/npm/lil-gui@0.19.2/dist/lil-gui.min.css " rel="stylesheet">
+      <script src="./src/libs/stats.min.js"></script>
+</head>
+
+<body>
+    <div class="parent-container">
+      <div class="canvas-container">
+        <canvas id="myCanvas"></canvas>
+        <div class="loading-bar"></div>
+      </div>
+    </div>
+    <!-- Scripts at the end of the body -->
+    <!-- Place scripts in order they need to be loaded -->
+    <script type="module" src="src/js/scene.js"></script>
+</body>
+
+</html>
